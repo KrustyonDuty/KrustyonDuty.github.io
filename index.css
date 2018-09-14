@@ -3,16 +3,16 @@
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: xx-large;
 	font-weight: bold;
-	background-color: #FF0000;
+	background-color: #616936;
 	border-radius: 4px;
 	padding: 10px;
 	text-align: center;
 }
 .buttonStyle {
 	border-radius: 4px;
-	border: thin solid #F0E020;
+	border: thin solid #616936;
 	padding: 5px;
-	background-color: #F8F094;
+	background-color: #616936;
 	font-family: "Segoe UI", black, Geneva, Verdana, sans-serif;
 	font-weight: bold;
 	color: #663300;
@@ -26,8 +26,8 @@
 	cursor: pointer;
 }
 .buttonStyle:active {
-	border: thin solid #99CC00;
-	background-color: #F5FFD2;
-	color: #669900;
+	border: thin solid #693F36;
+	background-color: #693F36;
+	color: #69364B  ;
 	cursor: pointer;
 }
