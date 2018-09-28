@@ -2,9 +2,9 @@
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: xx-large
 	font-weight: bold;
-	background-color: #0E0D0E;
+	background-color: #020202;
 	border-radius: 4px;
-	padding: 10px;
+	padding: 5px;
 	text-align: center;
 }
 .buttonStyle {
@@ -14,20 +14,20 @@
 	background-color: #FFFFFF;
 	font-family: "Segoe UI", white, Geneva, Verdana, sans-serif;
 	font-weight: bold;
-	color: #663300;
+	color: #FF0000;
 	width: 75px;
 }
 
 .buttonStyle:hover {
 	border: thin solid #FFCC00;
-	background-color: #F0F8FF;
-	color: #996633;
+	background-color: #000000;
+	color: #FBFAFA;
 	cursor: pointer;
 }
 .buttonStyle:active {
-	border: thin solid #693F36;
+	border: thin solid #FF0000;
 	background-color: #693F36;
-	color: #69364B  ;
+	color: #FF0000;
 	cursor: pointer;
 }
 
@@ -37,5 +37,5 @@
   font-family: 'Trebuchet MS', Helvetica, sans-serif;
   background-image: url("https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-2/bg.jpg");
   background-size: cover;
-  color: #ffffff;
+  color: #FF0000;
 }
