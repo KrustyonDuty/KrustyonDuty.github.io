@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    
+<head>
+<meta charset="utf-8">
+<title> Angel Puga</title>
+
+<body>
+    <button type="button" onclick=clkme() >click me</button>
+    <p id="ptext">Jinga!</p>
+ 
+    <button type= "button" onclick=adder() >Adder</button>
+    
+    <p id="name">My name will go here</p>
+    
+    <button type="button" onclick=kiosk() >click me</button>
+    <p id="ptext">FUFUFUFUFU</p>
+    
+    
+    <img id="graphic"src="/Excalibur.png" width=400px height=300px>
+    
+    <button id="nope" type="button" onclick=picChange()>Fool</button>
+ 
+ 
+ <script>
+ 
+    var state = "Kool"
+    
+    function picChange(){
+        
+          if (state == "Kool"){
+            var pic = document.getElementById("graphic")
+            pic.src = "/Excalibur.png"
+            var button = document.getElementById("nope")
+            button.innerHTML = "Kool"
+            state = "Fool"
+          
+        }
+        else if (state == "Fool"){
+            var pic = document.getElementById("graphic")
+            pic.src = "/cr.jpg"
+            var button = document.getElementById("nope")
+            button.innerHTML = "Fool"
+            state = "Rem"
+        }
+         if (state == "Rem"){
+            var pic = document.getElementById("graphic")
+            pic.src = "/rem.jpg"
+            var button = document.getElementById("nope")
+            button.innerHTML = "Rem"
+            state = "Miyano"
+        }
+        else if (state == "Miyano"){
+            var pic = document.getElementById("graphic")
+            pic.src = "/miyano.jpg"
+            var button = document.getElementById("nope")
+            button.innerHTML = "Miyano"
+            state = "Fool"
+        }
+    }
+   
+    function clkme(){
+        var ptext = document.getElementById('ptext')
+        ptext.innerHTML = 'BOOOOOOMMMM!'
+        ptext.style.fontSize = "35px"
+        ptext.style.color = "blue"
+    }
+    
+    function adder(){
+    var x = 3
+    var y = 4
+    var z = x + y
+    var ptext = document.getElementById('ptext')
+    ptext.innerHTML = z
+    alert(z)
+    }
+    
+    function kiosk(){
+        var ptext = document.getElementById('ptext')
+        ptext.innerHTML = 'NOOOOOOO'
+        ptext.style.fontSize = "70"
+        ptext.style.color = "red"
+    
+    }
+    
+    var word = "Angel" + " " + "Puga"
+    document.getElementById("name").innerHTML = word
+    
+    var word = "Rest" + " " + "Chemistry"
+    document.getElementById("name").innerHTML = word
+    
+    var w = 4 
+    
+    if (w > 6){
+        document.getElementById("name").innerHTML = "Hello"
+    }
+    else{
+        document.getElementById("name").innerHTML = "Bye"
+    }
+
+
+</script>
+</body>
+</head>
+</html>
