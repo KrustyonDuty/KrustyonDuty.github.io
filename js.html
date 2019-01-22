@@ -19,8 +19,8 @@
     
     <img id="graphic"src="/Excalibur.png" width=400px height=300px>
     
-    <button id="nope" type="button" onclick=picChange()>Fool</button>
- 
+    <button id="showImg" type="button" onclick=showImg()>SHOW</button>
+    <button id="hideImg" type="button" onclick=hideImg()>HIDE</button>
  
  <script>
  
@@ -52,10 +52,10 @@
         }
         else if (state == "Miyano"){
             var pic = document.getElementById("graphic")
-            pic.src = "/miyano.jpg"
+            pic.src = "/miyano.png"
             var button = document.getElementById("nope")
             button.innerHTML = "Miyano"
-            state = "Fool"
+            state = "Kool"
         }
     }
    
@@ -83,9 +83,28 @@
     
     }
     
+    var button2 = document.createElement('button')
+    var buttonText = document.createTextNode("Clicker")
+    button2.appendChild(buttonText)
+    button2.setAttribute("onclick", "picChange()")
+    button2.setAttribute("id", "bubblegum")
+    
+    document.body.appendChild(button2)
+    
+    function hideImg(){
+       pic.style.display = "none"
+    }
+   
+    var adder2 = document.createElement('button')
+    var buttonText = document.createTextNode("Adder")
+    adder2.appendChild(buttonText)
+    adder2.setAttribute("onclick", "adder()")
+    adder2.setAttribute("id", "rice")
+    document.body.appendChild(adder2)
+    
     var word = "Angel" + " " + "Puga"
     document.getElementById("name").innerHTML = word
-    
+
     var word = "Rest" + " " + "Chemistry"
     document.getElementById("name").innerHTML = word
     
