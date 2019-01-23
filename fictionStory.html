@@ -86,7 +86,8 @@
     <a class="nav-link" href="https://angels-portfolio-krustyonduty.c9users.io/contactme.html">Contact me</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="https://angels-portfolio-krustyonduty.c9users.io/textadventure.html">Text Adventure</a>
+    <a class="nav-link" href="https://angels-portfolio-krustyonduty.c9users.io/fictionStory.html">Text Adventure</a>
+  </li>
 </ul>
 
 
@@ -120,25 +121,24 @@
     var state = "intro"
     
     function intro(){
-        text.innerHTML = "High School Romance Tokyo Japan"
+        text.innerHTML = "High School Romance<br>Tokyo, Japan<br><br>You are playing as a boy named Sora. He is a typical normal boy who has its ups and downs,<br>he likes a girl named Ayaka but has trouble communicating with her. Sora has a friend named<br> Kenzou that helps him try to have a normal conversation with the girl he likes. "
+        button1.innerHTML = "START GAME"
+        button1.style.display = "block"
+        button2.style.display = "none"
+        button3.style.display = "none"
+        button4.style.display = "none"
+        graphic.src = "/retro.png"
+    }
+    
+    function house(){
+        text.innerHTML = "Do you wish to go to school"
         button1.innerHTML = "Yes"
         button1.style.display = "block"
         button2.innerHTML = "No"
         button2.style.display = "block"
         button3.style.display = "none"
         button4.style.display = "none"
-        graphic.src = "/urara.jpg"
-    }
-    
-    function park(){
-        text.innerHTML = "You made it to the park"
-        button1.innerHTML = "Eat"
-        button1.style.display = "block"
-        button2.innerHTML = "Look at a girl"
-        button2.style.display = "block"
-        button3.style.display = "none"
-        button4.style.display = "none"
-        graphic.src = "/park.png"
+        graphic.src = "/house.png"
         
     }    
     
@@ -157,11 +157,12 @@
     function buttonclick(button){
         if (state == "intro"){
             if (button == 1){
-                state = "park"
-                park()
+                state = "house"
+                house()
                 
             }
-            else if (button == 2){
+        else if (state == "house"){
+             if (button == 1){
                 state= "alley"
                 alley()
             }
@@ -169,13 +170,9 @@
         else if(state == "park"){
             //button checks
         }
-        else if(state == "alley"){
-            //button checks
-        }
         
     }
-    
-    
+  }
     intro()
 
 </script>
